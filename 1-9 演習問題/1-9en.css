@@ -58,3 +58,33 @@
 h3 {
   margin: 10px 0 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+  }
+  .step-box {
+    float: none;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .step-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .step-img1 {
+    width: 100%;
+    padding-top: 40%;
+  }
+  .step-img2 {
+    width: 100%;
+    padding-top: 40%;
+  }
+  .step-img3 {
+    width: 100%;
+    padding-top: 40%;
+  }
+}
+
