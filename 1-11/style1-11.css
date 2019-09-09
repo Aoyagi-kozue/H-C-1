@@ -27,6 +27,9 @@ header {
   float: left;
   height: 70px;
 }
+#nav-input {
+  display: none;
+}
 .nav-list {
   float: right;
   line-height: 70px;
@@ -60,12 +63,12 @@ header {
   padding-top: 10px;
 }
 
-.portfolio .profile {
+.portfolio, .profile {
   width: 100%;
   background-color:#eceff1;
   margin: 0 auto;
 }
-.portfolio-title, .feature-title, .profile-title {
+.portfolio-title, .feature-title, .profile-title, .contact-title {
   text-align: center;
   font-size: 32px;
   color: #000;
@@ -79,7 +82,7 @@ header {
   background: #ec715f;
   margin: 8px auto 0;
 }
-.portfolio-text, .feature-text, .profile-text {
+.portfolio-text, .feature-text, .profile-text,.contact-text {
   text-align: center;
   font-size: 16px;
   color: #000;
@@ -169,6 +172,9 @@ header {
   background-color:#eceff1;
   margin: 0 auto;
 }
+.container {
+  margin: 0 auto;
+}
 .profile-title::after {
   content: "";
   display: block;
@@ -182,8 +188,11 @@ header {
   padding-bottom: 90px;
   margin: 0 auto;
 }
-.profile-image {
+.profile-left {
+  width: 512px;
   float: left;
+}
+.profile-image {
   width: 250px;
   height: 250px;
   background-image: url(img/my-icon.jpg);
@@ -195,7 +204,6 @@ header {
 .profile-detail {
   float: left;
   width: 512px;
-  margin: 0 auto;
 }
 .profile-name {
   font-size: 20px;
@@ -208,4 +216,219 @@ header {
 }
 .profile-comment:last-child {
 margin-bottom: 0;
+}
+
+.contact {
+  width: 800px;
+  margin: 0 auto;
+}
+.contact-title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70px;
+  background: #ec715f;
+  margin: 8px auto 0;
+}
+.contact-content {
+  width: 800px;
+  padding-bottom: 90px;
+}
+.left-contact-content {
+  width: 400px;
+  float: left;
+}
+.contact-left {
+  width: 130px;
+  margin: 0 auto;
+}
+.address-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.address-text {
+  display: inline-block;
+  text-decoration: underline;
+  color: #000;
+  padding-bottom: 20px;
+}
+.address-text:last-child {
+  padding-bottom: 0;
+}
+.right-contact-content {
+  width: 400px;
+  float: right;
+}
+.contact-right {
+  width: 180px;
+  margin: 0 auto;
+}
+.contact-right i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+.contact-right i:last-child{
+  margin-right: 0;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #ec715f;
+  line-height: 60px;
+}
+.footer-text {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 50px;
+  }
+  .header-bar {
+    width: 90%;
+  }
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #fafafa;
+  }
+  .menu-bar {
+    display: block;
+    background-color: #fafafa;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+  }
+  .menu-bar:first-child {
+    margin-top: 10px;
+  }
+  .logo {
+  	height: 50px;
+  }
+  .nav-list {
+  	display: none;
+  }
+
+
+  #main-visual {
+    background-image: url(img/code.png);
+    padding: 0 5px;
+  }
+  .main-visual-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-visual-name {
+    font-size: 40px;
+  }
+  .main-visual-text {
+    font-size: 18px;
+  }
+
+
+  .container {
+    width: 90%;
+  }
+  .portfolio, .profile {
+    padding: 0 5px;
+  }
+  .portfolio-text, .feature-text, .profile-text,.contact-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sp-none {
+    display: none;
+  }
+  .portfolio-content {
+    width: 300px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+  }
+  .portfolio-box {
+    float: none;
+  }
+  .portfolio-box:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+
+  .feature {
+    width: 100%;
+  }
+  .feature-content {
+    width: 90%;
+  }
+  .feature-box {
+    float: none;
+    margin: 0 auto;
+  }
+  .feature-box:last-child {
+    margin: 0 auto;
+  }
+
+
+  .profile-content {
+    width: 90%;
+    padding-bottom: 90px;
+    margin: 0 auto;
+  }
+  .profile-left {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .profile-detail {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .profile-name {
+    margin-top: 20px;
+  }
+
+
+.contact {
+  width: 100%;
+}
+.contact-content {
+  width: 100%;
+}
+.left-contact-content {
+  width: 100%;
+  float: none;
+}
+.contact-left {
+  width: 100%;
+  padding-top: 20px;
+}
+.address-title {
+  text-align: center;
+}
+.address-text {
+  width: 100%;
+  text-align: center;
+}
+.address-text:last-child {
+  padding-bottom: 20px;
+}
+.right-contact-content {
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+.contact-right {
+  width: 100%;
+}
+.contact-right i {
+  margin-right: 8px;
+}
 }
